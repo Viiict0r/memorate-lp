@@ -1,0 +1,30 @@
+.tos-wrapper p {
+  margin: auto;
+}
+
+.tos-wrapper h3 {
+  font-size: 22px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.tos-wrapper h4 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.tos-wrapper p {
+  margin-bottom: 15px;
+  text-align: justify;
+}
+
+.tos-wrapper ul {
+  margin-bottom: 15px;
+  list-style: disc;
+  padding-left: 18px;
+}
+
+.tos-wrapper a {
+  text-decoration: underline;
+}
