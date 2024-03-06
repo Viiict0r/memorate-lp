@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="w-full flex flex-row justify-between text-[#141414]">
+    <header className="w-full flex flex-row justify-between items-center text-[#141414]">
       <Link href="/">
         <Image
           src="/memorate_logo_dark.svg"
@@ -12,7 +12,14 @@ export const Header = () => {
           height={36}
         />
       </Link>
-      <span>icone</span>
+      <span>
+        <Image
+          width={17}
+          height={17}
+          alt="icon instagram"
+          src="/icon_instagram.svg"
+        />
+      </span>
     </header>
   );
 };
