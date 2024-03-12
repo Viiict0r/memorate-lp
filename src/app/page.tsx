@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-between items-start w-full text-[#141414] h-screen relative">
       <section className="flex flex-row gap-4 items-center h-full absolute">
-        <div className="lg:w-[364px] md:w-24 2xl:w-[664px] 3xl:w-[864px] flex flex-col ">
+        <div className="lg:w-[364px] md:w-24 2xl:w-[664px] 3xl:w-[864px] flex flex-col z-10">
           <h1 className="font-extrabold lg:text-[34px] 2xl:text-[44px] 3xl:text-[64px] lg:leading-[54px] 3xl:leading-[74px] md:text-[45px]">
             Aniversários nunca foram tão fáceis de lembrar.
           </h1>
@@ -46,7 +46,7 @@ export default function Home() {
             width={761}
             height={1050}
             layout="responsive"
-            className="fixed 3xl:-bottom-72 2xl:-bottom-64 right-12  3xl:max-w-[761px] 2xl:max-w-[661px] lg:max-w-[564px] lg:-bottom-14 "
+            className="fixed 3xl:-bottom-72 2xl:-bottom-64 right-12  3xl:max-w-[731px] 2xl:max-w-[661px] lg:max-w-[564px] lg:-bottom-14 "
           />
         </div>
       </section>

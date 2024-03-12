@@ -9,6 +9,9 @@ export const Footer = () => {
       <Link className="hover:underline" href="politica-de-privacidade">
         Política de privacidade.
       </Link>
+      <Link className="hover:underline" href="mailto:victor@cepil.dev">
+        Contate-nos.
+      </Link>
     </footer>
   );
 };
