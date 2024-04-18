@@ -8,6 +8,7 @@ export const Header = () => {
         <Image
           src="/memorate_logo_dark.svg"
           alt="logotipo memorate"
+          className="max-w-40 sm:max-w-max"
           width={255}
           height={36}
         />

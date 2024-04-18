@@ -13,6 +13,7 @@ Link para os Termos e Condições de provedores de serviços terceirizados usado
 *   [Google Play Services](https://policies.google.com/terms)
 *   [Google Analytics for Firebase](https://www.google.com/analytics/terms/)
 *   [Firebase Crashlytics](https://firebase.google.com/terms/crashlytics)
+*   [Revenue Cat](https://www.revenuecat.com/terms/)
 
 Você deve estar ciente de que há certas coisas pelas quais a Viensoft não se responsabiliza. Certas funções do aplicativo exigirão que ele tenha uma conexão ativa com a Internet. A conexão pode ser Wi-Fi ou fornecida pelo seu provedor de rede móvel, mas a Viensoft não pode se responsabilizar pelo fato de o aplicativo não funcionar com funcionalidade total se você não tiver acesso ao Wi-Fi e não tiver nenhum dos seus dados subsídio restante.
 

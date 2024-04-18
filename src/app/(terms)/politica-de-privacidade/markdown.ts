@@ -20,6 +20,7 @@ Link para a política de privacidade de provedores de serviços terceirizados us
 * [Google Play Services](https://www.google.com/policies/privacy/)
 * [Google Analytics para Firebase](https://firebase.google.com/support/privacy)
 * [Firebase Crashlytics](https://firebase.google.com/support/privacy/)
+* [Revenue Cat](https://www.revenuecat.com/terms/)
 
 ### Dados de registro
 
