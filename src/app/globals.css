@@ -2,31 +2,37 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
 * {
   margin: 0;
   box-sizing: border-box;
   padding: 0;
 }
+
 body {
-  color: rgb(var(--foreground-rgb));
-  background-color: white;
+  color: #141414;
+  background-color: #f5f5f5;
 }
 
 @layer utilities {
-  .text-balance {
-    text-wrap: balance;
+  .text-cta {
+    /** https://clamp.font-size.app/ */
+    font-size: clamp(1.875rem, 1.3816rem + 1.9737vw, 3.75rem);
+    line-height: clamp(2.125rem, 1.4671rem + 2.6316vw, 4.625rem);;
+    max-width: clamp(21.25rem, 12.7796rem + 33.8816vw, 53.4375rem);
+  }
+
+  .text-subtitle {
+    font-size: clamp(0.875rem, 0.6447rem + 0.9211vw, 1.75rem);
+    margin-top: clamp(0.5rem, 0.0559rem + 1.7763vw, 2.1875rem);
+  }
+
+  .cta-image {
+    max-width: clamp(21.25rem, 14.3421rem + 27.6316vw, 47.5rem);
+    transform: translateY(clamp(4.0625rem, 1.8421rem + 8.8816vw, 12.5rem));
+  }
+
+  .dynamic-container {
+    --padding-size: clamp(1.875rem, 0.7895rem + 4.3421vw, 6rem);
+    padding: 36px var(--padding-size) 36px var(--padding-size);
   }
 }

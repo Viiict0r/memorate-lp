@@ -2,14 +2,23 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full gap-[1.5rem] flex flex-row text-[#141414] mt-auto p-4">
-      <Link className="hover:underline" href="termos-de-uso">
+    <footer className="w-full gap-[1.5rem] hidden flex-row absolute bottom-0 pb-12 pointer-events-none md:flex">
+      <Link
+        className="hover:underline pointer-events-auto"
+        href="termos-de-uso"
+      >
         Termos de uso.
       </Link>
-      <Link className="hover:underline" href="politica-de-privacidade">
+      <Link
+        className="hover:underline pointer-events-auto"
+        href="politica-de-privacidade"
+      >
         Política de privacidade.
       </Link>
-      <Link className="hover:underline" href="mailto:victor@cepil.dev">
+      <Link
+        className="hover:underline pointer-events-auto"
+        href="mailto:victor@cepil.dev"
+      >
         Contate-nos.
       </Link>
     </footer>

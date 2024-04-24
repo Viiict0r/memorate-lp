@@ -6,8 +6,29 @@ import screen_app from "@/assets/screen_app.svg";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-between items-start w-full text-[#141414] h-screen relative">
-      <section className="flex flex-row gap-4 items-center h-full absolute">
+    <main className="flex flex-col mt-10 items-center w-full md:-mt-9 md:flex-row">
+      <section>
+        <h1 className="font-semibold text-cta text-cta-width text-center md:text-left">
+          Aniversários nunca foram tão fáceis de lembrar.
+        </h1>
+        <h2 className="text-subtitle font-normal grid text-center md:max-w-full md:block md:text-left">
+          Organize, lembre-se e faça&nbsp;
+          <span className="bg-clip-text font-semibold bg-gradient-to-r from-[#BD00FF] to-[#2F00B6] text-transparent">
+            cada aniversário único!
+          </span>
+        </h2>
+      </section>
+      <section>
+        <Image
+          alt="Screen app"
+          src={screen_app}
+          width={761}
+          height={1050}
+          layout="responsive"
+          className="cta-image pointer-events-none"
+        />
+      </section>
+      {/* <section className="flex flex-row gap-4 items-center h-full absolute">
         <div className="lg:w-[364px] md:w-24 2xl:w-[664px] 3xl:w-[864px] flex flex-col z-10">
           <h1 className="font-extrabold lg:text-[34px] 2xl:text-[44px] 3xl:text-[64px] lg:leading-[54px] 3xl:leading-[74px] md:text-[45px]">
             Aniversários nunca foram tão fáceis de lembrar.
@@ -49,7 +70,7 @@ export default function Home() {
             className="fixed 3xl:-bottom-72 2xl:-bottom-64 right-12  3xl:max-w-[731px] 2xl:max-w-[661px] lg:max-w-[564px] lg:-bottom-14 "
           />
         </div>
-      </section>
+      </section> */}
     </main>
   );
 }

@@ -3,12 +3,12 @@ import Link from "next/link";
 
 export const Header = () => {
   return (
-    <header className="w-full flex flex-row justify-between items-center text-[#141414]">
-      <Link href="/">
+    <header className="w-full flex justify-between items-center">
+      <Link href="/" className="w-fit">
         <Image
           src="/memorate_logo_dark.svg"
-          alt="logotipo memorate"
-          className="max-w-40 sm:max-w-max"
+          alt="memorate.app.br"
+          className="max-h-7 md:max-h-9 w-fit"
           width={255}
           height={36}
         />
