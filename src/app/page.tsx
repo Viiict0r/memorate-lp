@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image";
 import Link from "next/link";
 import app_store_icon from "@/assets/app_store_icon.svg";
@@ -6,19 +7,26 @@ import screen_app from "@/assets/screen_app.svg";
 
 export default function Home() {
   return (
-    <main className="flex flex-col mt-10 items-center w-full md:-mt-9 md:flex-row">
+    <main className="flex flex-col mt-10 items-center w-full md:-mt-9 md:flex-row lg:gap-10 h-full">
       <section>
-        <h1 className="font-semibold text-cta text-cta-width text-center md:text-left">
-          Aniversários nunca foram tão fáceis de lembrar.
+        <h1 className="font-semibold text-cta text-cta-width text-center md:text-left relative lg:whitespace-nowrap">
+          Aniversários nunca foram&nbsp;
+          <br className="hidden lg:block" />
+          tão fáceis de lembrar.
+          <img
+            src="highlight-icon.png"
+            alt=""
+            className="max-h-8 -top-4 -right-3 absolute lg:-top-7 lg:-right-10 lg:max-h-16"
+          />
         </h1>
         <h2 className="text-subtitle font-normal grid text-center md:max-w-full md:block md:text-left">
           Organize, lembre-se e faça&nbsp;
-          <span className="bg-clip-text font-semibold bg-gradient-to-r from-[#BD00FF] to-[#2F00B6] text-transparent">
+          <span className="bottom-risk bg-clip-text font-semibold bg-gradient-to-r from-[#BD00FF] to-[#2F00B6] text-transparent bg-black relative w-fit mx-auto">
             cada aniversário único!
           </span>
         </h2>
       </section>
-      <section>
+      <section className="pl-5">
         <Image
           alt="Screen app"
           src={screen_app}

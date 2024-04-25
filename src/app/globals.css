@@ -16,7 +16,7 @@ body {
 @layer utilities {
   .text-cta {
     /** https://clamp.font-size.app/ */
-    font-size: clamp(1.875rem, 1.3816rem + 1.9737vw, 3.75rem);
+    font-size: clamp(1.875rem, 1.3971rem + 1.9608vw, 3.75rem);
     line-height: clamp(2.125rem, 1.4671rem + 2.6316vw, 4.625rem);;
     max-width: clamp(21.25rem, 12.7796rem + 33.8816vw, 53.4375rem);
   }
@@ -32,7 +32,45 @@ body {
   }
 
   .dynamic-container {
-    --padding-size: clamp(1.875rem, 0.7895rem + 4.3421vw, 6rem);
+    --padding-size: clamp(1.5625rem, 0.6579rem + 3.6184vw, 5rem);
     padding: 36px var(--padding-size) 36px var(--padding-size);
+  }
+
+  .bottom-risk:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    bottom: -100%;
+    background-image: url('/cta-risk.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .bottom-risk:after {
+    content: '';
+    background-color: #f5f5f5;
+    position: absolute;
+    height: 100%;
+    left: 0;
+    bottom: -100%;
+    height: 100%;
+    width: 100%;
+    animation-name: draw;
+    animation-duration: 350ms;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+  }
+
+  @keyframes draw {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(100%);
+      display: none;
+    }
   }
 }
