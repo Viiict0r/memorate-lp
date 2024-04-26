@@ -17,8 +17,7 @@ body {
   .text-cta {
     /** https://clamp.font-size.app/ */
     font-size: clamp(1.875rem, 1.3971rem + 1.9608vw, 3.75rem);
-    line-height: clamp(2.125rem, 1.4671rem + 2.6316vw, 4.625rem);;
-    max-width: clamp(21.25rem, 12.7796rem + 33.8816vw, 53.4375rem);
+    line-height: clamp(2.125rem, 1.4671rem + 2.6316vw, 4.625rem);
   }
 
   .text-subtitle {
@@ -27,8 +26,24 @@ body {
   }
 
   .cta-image {
-    max-width: clamp(21.25rem, 14.3421rem + 27.6316vw, 47.5rem);
+    max-width: clamp(21.25rem, 14.3421rem + 27.6316vw, 47.5rem) !important;
+    width: 100%;
     transform: translateY(clamp(4.0625rem, 1.8421rem + 8.8816vw, 12.5rem));
+  }
+
+  .center-arrow {
+    left: clamp(24.375rem, 16.8092rem + 30.2632vw, 53.125rem);
+  }
+
+  .center-arrow img {
+    /** https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIxOTIwcHgiLCJtaW5Gb250U2l6ZSI6IjgwcHgiLCJtYXhGb250U2l6ZSI6IjEyOHB4In0%3D */
+    max-width: clamp(5rem, 4.2105rem + 3.1579vw, 8rem);;
+  }
+
+  .download-btn {
+    max-width: clamp(8.75rem, 8.2401rem + 2.0395vw, 10.6875rem);
+    width: 100%;
+    position: relative;
   }
 
   .dynamic-container {
@@ -59,7 +74,7 @@ body {
     width: 100%;
     animation-name: draw;
     animation-duration: 350ms;
-    animation-delay: 1.5s;
+    animation-delay: 1s;
     animation-fill-mode: forwards;
     animation-timing-function: ease-in-out;
   }
