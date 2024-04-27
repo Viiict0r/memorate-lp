@@ -14,6 +14,16 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Memorate - Lembrete de Aniversários",
   description: "Organize, lembre-se e torne único",
+  openGraph: {
+    images: [
+      {
+        url: "/icon.png",
+        width: 512,
+        height: 512,
+        alt: "Memorate - Lembrete de Aniversários",
+      },
+    ],
+  },
   icons: {
     icon: "/favicon.ico",
     shortcut: "/icon.png",
