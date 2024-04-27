@@ -4,6 +4,7 @@ import "./globals.css";
 import { Layout } from "@/components/layout";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
+import { MobileMenuWrapper } from "../components/header/mobile-menu";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -26,6 +27,7 @@ export default function RootLayout({
         className={`${poppins.className} mx-auto max-w-[1650px] relative px-6 sm:px-16`}
       >
         {children}
+        <MobileMenuWrapper />
       </body>
     </html>
   );

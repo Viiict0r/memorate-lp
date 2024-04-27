@@ -14,41 +14,45 @@ body {
 }
 
 @layer utilities {
-  .text-cta {
-    /** https://clamp.font-size.app/ */
-    font-size: clamp(1.875rem, 1.3971rem + 1.9608vw, 3.75rem);
-    line-height: clamp(2.125rem, 1.4671rem + 2.6316vw, 4.625rem);
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      display: block;
+    }
+    100% {
+      opacity: 1;
+    }
   }
 
-  .text-subtitle {
-    font-size: clamp(0.875rem, 0.6447rem + 0.9211vw, 1.75rem);
-    margin-top: clamp(0.5rem, 0.0559rem + 1.7763vw, 2.1875rem);
+  @keyframes fadeOut {
+    0% {
+      opacity: 1;
+      display: block;
+    }
+    100% {
+      opacity: 0;
+      display: none;
+    }
   }
 
-  .cta-image {
-    max-width: clamp(21.25rem, 14.3421rem + 27.6316vw, 47.5rem) !important;
-    width: 100%;
-    transform: translateY(clamp(4.0625rem, 1.8421rem + 8.8816vw, 12.5rem));
+  .menu-active {
+    animation-name: fadeIn;
+    animation-duration: 150ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
   }
 
-  .center-arrow {
-    left: clamp(24.375rem, 16.8092rem + 30.2632vw, 53.125rem);
-  }
-
-  .center-arrow img {
-    /** https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIxOTIwcHgiLCJtaW5Gb250U2l6ZSI6IjgwcHgiLCJtYXhGb250U2l6ZSI6IjEyOHB4In0%3D */
-    max-width: clamp(5rem, 4.2105rem + 3.1579vw, 8rem);;
+  .menu-inactive {
+    animation-name: fadeOut;
+    animation-duration: 150ms;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
   }
 
   .download-btn {
     max-width: clamp(8.75rem, 8.2401rem + 2.0395vw, 10.6875rem);
     width: 100%;
     position: relative;
-  }
-
-  .dynamic-container {
-    --padding-size: clamp(1.5625rem, 0.6579rem + 3.6184vw, 5rem);
-    padding: 36px var(--padding-size) 36px var(--padding-size);
   }
 
   .bottom-risk:before {

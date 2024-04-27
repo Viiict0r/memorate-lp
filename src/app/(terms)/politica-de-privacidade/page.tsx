@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 export default function PoliticaDePrivacidade() {
   return (
-    <main className="tos-wrapper px-0 py-5 sm:p-24 text-[#141414]">
+    <div className="tos-wrapper text-[#141414]">
       <Markdown>{markdown}</Markdown>
-    </main>
+    </div>
   );
 }
