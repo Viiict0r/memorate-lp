@@ -11,33 +11,37 @@ export default function Home() {
     <main className="max-h-screen h-screen overflow-hidden relative">
       <Header />
       <div className="flex flex-col items-center w-full relative h-full gap-5 sm:gap-10 md:-mt-28 md:flex-row md:justify-between">
-        {/* <div className="center-arrow absolute top-[70%] transform -translate-x-1/2 -translate-y-1/2 w-fit h-fit z-10 hidden lg:block">
-          <img src="/arrow.png" className="max-w-32" alt="arrow" />
-        </div> */}
         <section className="relative grid place-content-center h-full">
-          {/* <img
-            src="/star.png"
-            className="absolute bottom-[10vh] max-h-[18px] max-w-[18px] md:top-[-8vh] md:left-[16%] md:max-h-7 md:max-w-7"
-            alt="star"
-          /> */}
-          {/* text-[2.8125rem] whitespace-nowrap 2xl:text-[3.125rem] 1xl: */}
-          <h1 className="text-center md:text-left md:whitespace-nowrap text-[1.875rem] sm:text-[2.625rem] lg:text-[3rem] xl:text-6xl leading-[2.3125rem] sm:leading-[44px] md:leading-tight font-semibold w-full max-w-[337px] sm:max-w-[500px] md:max-w-full">
+          <h1 className="text-center md:text-left md:whitespace-nowrap text-[1.875rem] sm:text-[2.625rem] lg:text-[3rem] xl:text-6xl leading-[2.3125rem] sm:leading-[44px] md:leading-tight font-semibold w-full max-w-[337px] sm:max-w-[500px] md:max-w-full relative">
             Aniversários nunca foram&nbsp;
             <br className="hidden md:block" /> tão fáceis{" "}
             <br className="block md:hidden" /> de lembrar.
-            {/* <img
+            {/* Highlight icon */}
+            <img
               src="highlight-icon.png"
               alt=""
-              className="max-h-5 -top-2 right-0 absolute sm:max-h-8 sm:-top-4 sm:-right-3 lg:-top-7 lg:-right-10 lg:max-h-16"
-            /> */}
+              className="max-h-5 sm:max-h-8 md:max-h-10 lg:max-h-14 right-0 sm:right-4 md:-right-5 lg:-right-8 -top-1 sm:-top-4 md:-top-5 lg:-top-7 absolute"
+            />
+            {/* Star icon */}
+            <img
+              src="/star.png"
+              className="absolute max-h-[18px] sm:max-h-5 md:max-h-7 left-0 sm:left-10 md:left-24 md:-top-16"
+              alt="star"
+            />
           </h1>
-          <h2 className="text-lg lg:text-[1.375rem] xl:text-2xl font-normal mt-5 grid text-center md:max-w-full md:block md:text-left">
+          <h2 className="text-lg lg:text-[1.375rem] xl:text-2xl font-normal mt-5 grid text-center md:max-w-full md:block md:text-left relative">
             Organize, lembre-se e faça&nbsp;
             <span className="bottom-risk bg-clip-text font-semibold bg-gradient-to-r from-[#BD00FF] to-[#2F00B6] text-transparent bg-black relative w-fit mx-auto">
               cada aniversário único!
             </span>
+            {/* Arrow */}
+            <img
+              src="/arrow.png"
+              className="max-w-24 lg:max-w-[120px] absolute -right-16 lg:-right-20 top-5 xl:-right-0 xl:top-0 hidden md:block"
+              alt="arrow"
+            />
           </h2>
-          <div className="flex gap-4 mt-10 justify-center md:justify-start">
+          <div className="flex gap-5 sm:gap-4 mt-16 justify-center md:justify-start relative">
             <Link href={DOWNLOAD_APP_STORE_LINK}>
               <img
                 src="app-store.png"
@@ -57,14 +61,15 @@ export default function Home() {
                 </span>
               </div>
             </div>
+            {/* Second star */}
+            <img
+              src="/star.png"
+              className="absolute hidden md:block max-h-8 xl:max-h-10 right-[120px] lg:right-[180px] xl:right-[300px] -top-6 lg:-top-4"
+              alt="star"
+            />
           </div>
-          {/* <img
-            src="/star.png"
-            className="max-h-10 max-w-10 bottom-[-10vh] right-[25%] hidden md:absolute"
-            alt="star"
-          /> */}
         </section>
-        <section className="w-full max-w-[500px] flex justify-end md:max-w-[100%] md:translate-y-1/4">
+        <section className="w-full max-w-[500px] flex justify-end md:max-w-[100%] md:translate-y-[17%]">
           <img
             alt="app preview"
             src="/desktop-screens.png"
