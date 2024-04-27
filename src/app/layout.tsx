@@ -23,11 +23,9 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} max-h-screen h-screen overflow-hidden dynamic-container mx-auto max-w-[1920px] relative`}
+        className={`${poppins.className} mx-auto max-w-[1650px] relative px-6 sm:px-16`}
       >
-        <Header />
         {children}
-        <Footer />
       </body>
     </html>
   );
