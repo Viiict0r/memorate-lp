@@ -14,6 +14,7 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Memorate - Lembrete de Aniversários",
   description: "Organize, lembre-se e torne único",
+  metadataBase: new URL("https://memorate.app.br"),
   openGraph: {
     images: [
       {
