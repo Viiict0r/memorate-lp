@@ -14,6 +14,10 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Memorate - Lembrete de Aniversários",
   description: "Organize, lembre-se e torne único",
+  icons: {
+    icon: "/favicon.ico",
+    shortcut: "/icon.png",
+  },
 };
 
 export default function RootLayout({
