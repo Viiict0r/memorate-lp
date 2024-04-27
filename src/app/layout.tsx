@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { Layout } from "@/components/layout";
-import { Header } from "@/components/header";
-import { Footer } from "@/components/footer";
 import { MobileMenuWrapper } from "../components/header/mobile-menu";
 
 const poppins = Poppins({
@@ -14,17 +11,36 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Memorate - Lembrete de Aniversários",
   description: "Organize, lembre-se e torne único",
-  metadataBase: new URL("https://memorate.app.br"),
+  applicationName: "memorate",
+  keywords:
+    "memorate, lembrete aniversário, lembrete, aniversário, organização, organizador, aniversários",
+  robots: {
+    follow: true,
+    index: true,
+  },
   openGraph: {
+    type: "website",
+    url: "https://memorate.app.br",
+    title: "Memorate - Lembrete de Aniversários",
+    description: "Organize, lembre-se e torne único",
     images: [
       {
-        url: "/icon.png",
-        width: 512,
-        height: 512,
+        url: "https://memorate.app.br/og-image.png",
         alt: "Memorate - Lembrete de Aniversários",
       },
     ],
   },
+  twitter: {
+    site: "@memorate.app.br",
+    card: "summary_large_image",
+    images: [
+      {
+        url: "https://memorate.app.br/og-image.png",
+        alt: "Memorate - Lembrete de Aniversários",
+      },
+    ],
+  },
+  metadataBase: new URL("https://memorate.app.br"),
   icons: {
     icon: "/favicon.ico",
     shortcut: "/icon.png",
