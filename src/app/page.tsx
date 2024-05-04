@@ -8,7 +8,7 @@ const DOWNLOAD_APP_STORE_LINK =
 
 export default function Home() {
   return (
-    <main className="max-h-screen h-screen overflow-hidden relative">
+    <main className="max-h-screen h-full overflow-hidden relative">
       <Header />
       <div className="flex flex-col items-center w-full relative h-full gap-5 sm:gap-10 md:-mt-28 md:flex-row md:justify-between">
         <section className="relative grid place-content-center h-full">

@@ -13,7 +13,9 @@ export const MobileMenu = () => {
 
     if (isOpen) {
       element.classList.remove("menu-active");
+      element.classList.remove("z-10");
       element.classList.add("menu-inactive");
+      element.classList.add("-z-10");
 
       // Enable scroll on menu close
       document.body.classList.remove("overflow-hidden");
@@ -21,8 +23,10 @@ export const MobileMenu = () => {
       setOpen(false);
     } else {
       element.classList.add("menu-active");
+      element.classList.add("z-10");
       element.classList.remove("menu-inactive");
       element.classList.remove("hidden");
+      element.classList.remove("-z-10");
 
       // Disable scroll on menu close
       document.body.classList.add("overflow-hidden");
@@ -58,7 +62,9 @@ export const MobileMenuWrapper = () => {
     const element = document.getElementById("mobile-wrapper")!;
 
     element.classList.remove("menu-active");
+    element.classList.remove("z-10");
     element.classList.add("menu-inactive");
+    element.classList.add("-z-10");
 
     // Enable scroll on menu close
     document.body.classList.remove("overflow-hidden");
