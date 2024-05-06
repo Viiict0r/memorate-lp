@@ -5,6 +5,8 @@ import { Footer } from "../components/footer";
 
 const DOWNLOAD_APP_STORE_LINK =
   "https://apps.apple.com/br/app/memorate/id6478419879";
+const DOWNLOAD_APP_PLAY_STORE_LINK =
+  "https://play.google.com/store/apps/details?id=com.viensoft.memorate.app";
 
 export default function Home() {
   return (
@@ -49,18 +51,13 @@ export default function Home() {
                 alt="Baixe na App Store"
               />
             </Link>
-            <div className="w-fit h-fit relative">
+            <Link href={DOWNLOAD_APP_PLAY_STORE_LINK}>
               <img
                 src="google-play.png"
                 className="download-btn"
                 alt="Baixe na Play Store"
               />
-              <div className="absolute h-full w-full bg-white/80 rounded-lg top-0 left-0 grid place-content-center">
-                <span className="font-semibold uppercase text-sm">
-                  Em breve
-                </span>
-              </div>
-            </div>
+            </Link>
             {/* Second star */}
             <img
               src="/star.png"
