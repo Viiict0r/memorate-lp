@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="w-full gap-[1.5rem] hidden flex-row absolute bottom-0 pb-12 pointer-events-none md:flex">
+    <footer className="w-full gap-[1.5rem] hidden flex-row pb-8 pointer-events-none md:flex">
       <Link
         className="hover:underline pointer-events-auto"
         href="termos-de-uso"

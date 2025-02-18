@@ -18,7 +18,7 @@ export const Header = () => {
   };
 
   return (
-    <header className="w-full flex justify-center md:justify-between items-center py-8 relative z-30">
+    <header className="w-full flex justify-center md:justify-between items-center py-6 relative z-30">
       <Link href="/" className="w-fit" onClick={closeMobileMenu}>
         <Image
           src="/memorate_logo_dark.svg"
@@ -37,12 +37,17 @@ export const Header = () => {
       </Link>
       <span className="hidden md:block">
         <Link href="https://www.instagram.com/memorate.app.br">
-          <Image
-            width={17}
-            height={17}
-            alt="icon instagram"
-            src="/icon_instagram.svg"
-          />
+          <div className="rounded-full bg-[#141414] py-3 px-4 flex items-center gap-2">
+            <Image
+              width={17}
+              height={17}
+              alt="icon instagram"
+              src="/icon_instagram.png"
+            />
+            <span className="text-white text-sm">
+              Segue a gente no instagram!
+            </span>
+          </div>
         </Link>
       </span>
       <MobileMenu />

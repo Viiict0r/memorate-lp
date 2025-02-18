@@ -55,7 +55,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${poppins.className} mx-auto max-w-[1650px] relative px-6 sm:px-16`}
+        className={`${poppins.className} mx-auto max-w-[1650px] relative px-6`}
       >
         {children}
         <MobileMenuWrapper />
