@@ -7,6 +7,7 @@ import { useIsDesktop } from "@/hooks/use-is-desktop";
 import { useEffect, useRef, useState } from "react";
 
 export function Notification() {
+  const [interacted, setInteracted] = useState(false);
   const [canNotify, setCanNotify] = useState(() => {
     if (typeof window === "undefined") return false;
 
@@ -14,9 +15,9 @@ export function Notification() {
 
     if (storedValue) {
       const diffInMs = Math.abs(new Date().getTime() - Number(storedValue)); // Diferença em milissegundos
-      const oneHourInMs = 60 * 60 * 1000; // 1 hora em milissegundos
+      const fiveMinutesInMs = 60 * 5 * 1000; // 5 minutos em milissegundos
 
-      return diffInMs > oneHourInMs;
+      return diffInMs > fiveMinutesInMs;
     }
 
     return true;
@@ -28,11 +29,18 @@ export function Notification() {
 
   useEffect(() => {
     function mouseMoveHandler(event: MouseEvent) {
-      if (event.clientY < 10 && !fired.current && isDesktop && canNotify) {
+      if (
+        event.clientY < 10 &&
+        !fired.current &&
+        isDesktop &&
+        canNotify &&
+        interacted
+      ) {
         fired.current = true;
         setTriggerTime(new Date());
 
         const audio = new Audio("notification.mp3");
+        audio.autoplay = true;
         audio.play();
 
         setCanNotify(false);
@@ -40,12 +48,18 @@ export function Notification() {
       }
     }
 
+    function handleTouchStart() {
+      setInteracted(true);
+    }
+
     window.addEventListener("mousemove", mouseMoveHandler);
+    window.addEventListener("click", handleTouchStart);
 
     return () => {
       window.removeEventListener("mousemove", mouseMoveHandler);
+      window.removeEventListener("click", handleTouchStart);
     };
-  }, [isDesktop, canNotify]);
+  }, [isDesktop, canNotify, interacted]);
 
   useEffect(() => {
     if (!triggerTime) return;
