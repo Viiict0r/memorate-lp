@@ -3,8 +3,9 @@ import { Header } from "@/components/header";
 import { HeadlineDesktop } from "@/components/headline";
 import { HeadlineMobile } from "@/components/headline/headline.mobile";
 import { MockupDesktop } from "@/components/mockup";
+import { Notification } from "@/components/notification";
 
-export default function Dev() {
+export default function Page() {
   // v2 page
   return (
     <main className="max-h-screen h-full w-full overflow-hidden">
@@ -16,7 +17,8 @@ export default function Dev() {
           <HeadlineDesktop />
           <HeadlineMobile />
         </section>
-        <section className="sm:col-span-1">
+        <section className="sm:col-span-1 relative">
+          <Notification />
           <MockupDesktop />
         </section>
       </div>

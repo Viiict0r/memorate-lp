@@ -9,11 +9,11 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Memorate - Lembrete de Aniversários",
-  description: "Organize, lembre-se e torne único",
+  title: "memorate - Lembretes especiais",
+  description: "Datas importantes nunca foram tão fáceis de recordar",
   applicationName: "memorate",
   keywords:
-    "memorate, lembrete aniversário, lembrete, aniversário, organização, organizador, aniversários",
+    "memorate, lembrete aniversário, lembrete, aniversário, relacionamento, eventos, férias, organização, organizador, aniversários",
   robots: {
     follow: true,
     index: true,
@@ -21,12 +21,12 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     url: "https://memorate.app.br",
-    title: "Memorate - Lembrete de Aniversários",
-    description: "Organize, lembre-se e torne único",
+    title: "memorate - Lembretes especiais",
+    description: "Datas importantes nunca foram tão fáceis de recordar",
     images: [
       {
         url: "https://memorate.app.br/og-image.png",
-        alt: "Memorate - Lembrete de Aniversários",
+        alt: "memorate - Lembretes especiais",
       },
     ],
   },
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     images: [
       {
         url: "https://memorate.app.br/og-image.png",
-        alt: "Memorate - Lembrete de Aniversários",
+        alt: "memorate - Lembretes especiais",
       },
     ],
   },
