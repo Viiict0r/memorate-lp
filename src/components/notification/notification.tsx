@@ -93,8 +93,8 @@ export function Notification() {
           🥳 Surpresa especial!
         </span>
         <span className="text-xs text-gray-600 leading-4">
-          Hoje é o aniversário de João, mostre que você está presente! Envie uma
-          mensagem pelo app.
+          Hoje é o aniversário de Julia, mostre que você está presente! Envie
+          uma mensagem pelo app.
         </span>
       </div>
     </div>
